@@ -1,0 +1,338 @@
+@mixin styleTitle(){
+  font-weight: 700;
+  font-family: $playfair;
+  font-size: 36px;
+  line-height: 1.39em;
+  color: #000;
+}
+.hero-banner {
+  @include fullBlock;
+  margin-top: 35px;
+  &__text,
+  &__image {
+    float: left;
+    width: 50%;
+  } 
+  h1 {
+    margin-bottom: 74px;
+    font-family: $playfair;
+    font-size: 64px;
+    line-height: 125%;
+    color: $titleColor;
+    font-weight: bold;
+    position: relative;
+  }
+  h1::before{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url(/assets/left-side-circle.svg);
+    background-position: center;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    display: block;
+    bottom: -154px;
+    left: -110px;
+  }
+  h1::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/top-star.svg);
+    background-position: center;
+    background-size: 20x;
+    background-repeat: no-repeat;
+    display: block;
+    top: 0;
+    left: 468px;
+  }
+  h4.banner-form__title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.21em;
+    color: $titleColor;
+    padding-bottom: 21px;
+  }
+  h4.banner-form__title::after{
+    content: "";
+    width: 32px;
+    height: 2px;//C:\Users\PULSE Electronics\Desktop\Beetroot\Class\Sass-project\class-preprocessor\assets
+   // C:\Users\PULSE Electronics\Desktop\Beetroot\Class\Sass-project\class-preprocessor\scss\main
+    background-color: $titleColor;
+    display: block;
+    position: relative;
+    top: 21px;
+  }
+  .input-holder{
+    width: 220px;
+    margin-bottom: 35px;
+  }
+  .input-holder select{
+    width: 100%;
+    padding: 10px 31px;
+    appearance: none;
+    background-image: url(/assets/arrow.svg);
+    background-size: 9.5px;
+    background-repeat: no-repeat;
+    background-position: 190.5px center;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 2.1em;
+    color: $titleColor;
+  }
+  form{
+    margin-top: 48px;
+    width: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  .hero-banner__image{
+    width: 50%;
+  }
+  .hero-banner__image img{
+    width: 100%;
+    float: right;
+    position: relative;
+  }
+  .btn{
+    @include doBtn(180px);
+    background: $accent;
+    color: white;
+    height: 52px;
+    line-height: 50px;
+    position: relative;
+  }
+  .hero-banner__btn{
+    position: relative;
+  }
+  .btn::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/bottom-circle.svg);
+    background-position: center;
+    background-size: 20x;
+    background-repeat: no-repeat;
+    display: block;
+    bottom: -25px;
+    left:542px;
+  }
+}
+
+.learn-more{
+  @include fullBlock;
+  margin-top: 286px;
+  margin-bottom: 292px;
+  .learn-more__image{
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+  .learn-more__image::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(/assets/top-star.svg);
+    transform: rotate(7.49deg);
+    display: block;
+    position: absolute;
+    right: -36px;
+  }
+  .learn-more__image img{
+    width: 100%;
+  }
+  .learn-more-text{
+    width: 50%;
+    float: left;
+    padding: 112px 0;
+    padding-left: 102px;
+  }
+  .learn-more-text h1{
+    @include styleTitle();
+    margin-bottom: 20px; 
+  }
+  .learn-more-text p {
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 39px;
+    line-height: 1.75em;
+  }
+  .btn{
+    @include doBtn(164px);
+    height: 48px;
+    line-height: 46px;
+    position: relative;
+  }
+  .btn::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(/assets/bottom-circle.svg);
+    background-size: 20px;
+    background-position: center;
+    right: -183px;
+    top: -20px;
+  }
+}
+
+.destinations{
+  @include fullBlock;
+  .container{
+    width: 1116px;
+  }
+  .destinations-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+  .destinations-heading h1{
+    @include styleTitle();
+  }
+  .destinations-heading a {
+    color: $accent;
+    text-decoration: none;
+    img{
+      position: relative;
+      right: -2px;
+    }
+  }
+  .flex-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .destinations__img{
+    position: relative;
+    img{
+      border-radius: 8px;
+    }
+  }
+  .img__text{
+    position: absolute;
+    bottom: 0;
+    padding-top: 11px;
+    width: 120px;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 0px 6px 0px 0px;
+    h4{
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.47em;
+      color: #042521;
+    }
+    p{
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.6em;
+    }
+  }
+}
+
+.guides-app{
+  @include fullBlock;
+  margin-top: 237px;
+  margin-bottom: 248px;
+  .container {
+    width: 1116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .guides-app-text{
+    width: 50%;
+    h1{
+      @include styleTitle();
+    }
+    p{
+      color: #7d7987;
+      line-height: 1.76em;
+      margin-top: 20px;
+      margin-bottom:39px;
+    }
+    a{
+      @include doBtn(164px);
+    }
+  } 
+}
+
+.testimonials{
+  @include fullBlock;
+  .container{
+    width: 1116px;
+  }
+  h1{
+    @include styleTitle();
+    margin-bottom: 60px;
+  }
+  .our-people{
+    display: flex;
+    align-items: center;
+  }
+  .our-people-info{
+    width: 50%;
+    p {
+      font-size: 24px;
+      line-height: 1.5em;
+      color: #000;
+      margin-bottom: 40px;
+    }
+    h4{
+      font-size: 22px;
+      line-height: 4em;
+      color: #000;
+    }
+    span{
+      font-size: 18px;
+      color: rgba($color: #000000, $alpha: 0.85);
+    }
+  }
+  .stars{
+    margin-bottom: 30px;
+    img{
+      margin-right: 16px;
+      width: 25px;
+      height: 24px;
+    }
+    img:last-child{
+      margin-right: 0;
+    }
+  }
+  .our-people__img {
+    position: relative;
+    .arrows{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 132px;
+      padding-top: 20px;
+      text-align: right;
+      border-radius: 16px 0px 0px 0px;
+      background-color: #fff;
+      .arrows-current{
+        color: #000;
+      }
+      span{
+        width: 40px;
+        height: 40px;
+        border: 1px solid;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        &.arrows--current{
+          border: 1px solid #000;
+          margin-left: 22px;
+        }
+      }
+
+    }
+  }
+}

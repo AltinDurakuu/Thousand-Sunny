@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./dist/styles/app.css">
+  <title>Thousand Sunny</title>
+</head>
+
+<body>
+  <header class="main-header block-section">
+    <div class="container">
+      <a href="/" class="logo"><img src="./assets/logo.svg" alt="Company Name"></a>
+      <div class="nav-wrapper">
+        <nav class="primary-nav">
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Partner</a></li>
+          </ul>
+        </nav>
+        <nav class="button-nav">
+          <ul>
+            <li><a href="#" class="btn btn--full">Login</a></li>
+            <li><a href="#" class="btn">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main-content block-section">
+    <section class="hero-banner">
+      <div class="container">
+        <div class="hero-banner__text">
+          <h1>Explore and <br> Travel</h1>
+          <div class="hero-banner__form banner-form">
+            <h4 class="banner-form__title">Holiday finder</h4>
+            <form action="#">
+              <div class="input-holder">
+                <select name="location" id="loc">
+                  <option value="" disabled selected>Location</option>
+                  <option value="#">Location 1</option>
+                  <option value="#">Location 2</option>
+                </select>
+              </div>
+              <div class="input-holder">
+                <select name="location" id="acc">
+                  <option value="" disabled selected>Activity</option>
+                  <option value="#">Location 1</option>
+                  <option value="#">Location 2</option>
+                </select>
+              </div>
+              <div class="input-holder">
+                <select name="location" id="grade">
+                  <option value="" disabled selected>Grade</option>
+                  <option value="#">Location 1</option>
+                  <option value="#">Location 2</option>
+                </select>
+              </div>
+              <div class="input-holder">
+                <select name="location" id="date">
+                  <option value="" disabled selected>Date</option>
+                  <option value="#">Location 1</option>
+                  <option value="#">Location 2</option>
+                </select>
+              </div>
+              <div class="hero-baner__btn">
+                <a href="#" class="btn">Explore</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="hero-banner__image">
+          <img src="./assets/hero-image.png" alt="hero-image">
+        </div>
+      </div>
+    </section>
+    <section class="learn-more">
+      <div class="container">
+        <div class="learn-more__image">
+          <img src="./assets/learn-more.svg" alt="">
+        </div>
+        <div class="learn-more-text">
+          <h1 class="learn-more__title">A new way to explore the</br> world </h1>
+          <p>For decades travellers have reached for Lonely Planet</br> books when looking to plan and execute their perfect</br> 
+            trip, but now, they can also let Lonely Planet Experiences</br> lead the way</p>
+            <div class="learn-more__btn">
+              <a href="#" class="btn">Explore</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="destinations">
+      <div class="container">
+        <div class="destinations-heading">
+          <h1>Featured destinations</h1>
+          <a href="#">View all &nbsp;<img src="./assets/arrow-to-right.svg" alt="arrow-to-right"></a>
+        </div>
+        <div class="flex-container">
+          <article class="destinations__img">
+            <img src="./assets/destinations-1.png" alt="destinations-1-image">
+            <div class="img__text"><h4>Raja Ampat</h4><p>Indonesia</p></div>
+          </article>
+          <article class="destinations__img">
+            <img src="./assets/destinations-2.png" alt="destinations-2-image">
+            <div class="img__text"><h4>Fanjingshan</h4><p>China</p></div>
+          </article>
+          <article class="destinations__img">
+            <img src="./assets/destinations-3.png" alt="destinations-3-image">
+            <div class="img__text"><h4>Vevey</h4><p>Switzerland</p></div>
+          </article>
+          <article class="destinations__img">
+            <img src="./assets/destinations-4.png" alt="destinations-4-image">
+            <div class="img__text"><h4>Skadar</h4><p>Montenegro</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="guides-app">
+      <div class="container">
+        <div class="guides-app-text">
+          <h1>Guides by Thousand </br>Sunny</h1>
+          <p>Packed with tips and advice from our on-the-ground</br> experts, our city guides app (iOS and Android) is the</br> ultimate resource before and during a trip.</p>
+          <a href="#" class="btn">Download</a>
+        </div>
+        <div class="guides-app-img">
+          <img src="./assets/guides-app.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__title">
+          <h1>Testimonials</h1>
+        </div>
+        <div class="our-people">
+          <div class="our-people-info">
+            <div class="stars">
+              <img src="./assets/star.svg" alt="star-for-rating">
+              <img src="./assets/star.svg" alt="star-for-rating">
+              <img src="./assets/star.svg" alt="star-for-rating">
+              <img src="./assets/star.svg" alt="star-for-rating">
+              <img src="./assets/star.svg" alt="star-for-rating">
+              <img src="./assets/star.svg" alt="star-for-rating">
+            </div>
+            <p>“Quisque in lacus a urna fermentum</br> euismod. Integer mi nibh, dapibus ac</br> scelerisque eu, facilisis quis purus. Morbi</br> blandit sit amet turpis nec”</p>
+            <h4>Edward Newgate</h4>
+            <span>Founder Circle</span>
+          </div>
+          <div class="our-people-right-side">
+            <div class="our-people__img">
+               <img src="./assets/edward.png" alt="Edward-Newgate-photo">
+               <div class="arrows">
+                 <span class="left-arrow"><svg width="20" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 10L1 5.5L5 1" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></span>
+                 <span class="right-arrow arrows--current">
+                  <svg width="20" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5.5L1 10" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                 </span>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer block-section"></footer>
+</body>
+
+</html>
